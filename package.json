@@ -4,6 +4,7 @@
   "description": "army bots for HP",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/hungpham/armybots/issues"
   },
-  "homepage": "https://github.com/hungpham/armybots#readme"
+  "homepage": "https://github.com/hungpham/armybots#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "twit": "^2.2.5"
+  }
 }

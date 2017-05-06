@@ -1,0 +1,25 @@
+{
+  "name": "hpamybots",
+  "version": "1.0.0",
+  "description": "army bots for HP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungpham/armybots.git"
+  },
+  "keywords": [
+    "bots",
+    "javascript",
+    "twitter",
+    "twit"
+  ],
+  "author": "HungPham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hungpham/armybots/issues"
+  },
+  "homepage": "https://github.com/hungpham/armybots#readme"
+}

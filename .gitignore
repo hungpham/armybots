@@ -1,6 +1,7 @@
 node_modules
 oldcode.js
 .DS_Store
+.env
 Videos
 7-media/nasa_video.mp4
 7-media/nasa.jpg

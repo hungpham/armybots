@@ -9,9 +9,9 @@ const screen_name4 = process.env.SCREEN_NAME4;
 
 //GET LIST OF FOLLOWERS
 //can do friends/list or friends/id
-bot.get('followers/list', { screen_name },  (err, data, response) => {
-  let users = [];
-  data.users.map( user => {
+bot.get('followers/list', { screen_name }, (err, data, response) => {
+	let users = [];
+	data.users.map(user => {
 		users.push(user.name);
 		return user;
 	});
@@ -20,9 +20,9 @@ bot.get('followers/list', { screen_name },  (err, data, response) => {
 
 //GET LIST OF USERS BOT IS FOLLOWING
 //can do friends/list or friends/id
-bot.get('friends/list', { screen_name },  (err, data, response) => {
+bot.get('friends/list', { screen_name }, (err, data, response) => {
 	let users = [];
-  data.users.map( user => {
+	data.users.map(user => {
 		users.push(user.name);
 		return user;
 	});
@@ -30,21 +30,22 @@ bot.get('friends/list', { screen_name },  (err, data, response) => {
 });
 
 //FOLLOW SOMEONE
-bot.post('friendships/create', {screen_name}, (err, data, response) => {
-  console.log(data);
+bot.post('friendships/create', { screen_name }, (err, data, response) => {
+	console.log(data);
 });
 
 
 //LOOKUP FRIENDSHIPS
-bot.get('friendships/lookup', { screen_name: screen_name2 },  (err, data, response) => {
-  console.log(data)
+bot.get('friendships/lookup', { screen_name: screen_name2 }, (err, data, response) => {
+	console.log(data)
 });
 
 
 //DIRECT MESSAGE
 bot.post('direct_messages/new', {
 	screen_name: screen_name3,
-	text: `hi ${screen_name3}! messaged from Twit bots :p`},
+	text: `hi ${screen_name3}! messaged from Twit bots :p`
+},
 	(err, data, response) => {
-  console.log(data);
-});
+		console.log(data);
+	});
